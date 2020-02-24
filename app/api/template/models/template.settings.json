@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "templates",
+  "info": {
+    "name": "template"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "senderName": {
+      "type": "string"
+    },
+    "body": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
